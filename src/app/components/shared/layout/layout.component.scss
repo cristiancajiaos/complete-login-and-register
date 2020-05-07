@@ -1,0 +1,44 @@
+@import './../../../../assets/scss/variables';
+
+.active {
+  color: darken($base-color, 25%) !important;
+}
+
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+mat-sidenav {
+  width: 200px;
+  background-color: $base-color;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+mat-sidenav-content {
+  padding: 1rem;
+  height:90vh;
+}
